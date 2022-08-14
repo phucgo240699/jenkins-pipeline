@@ -9,12 +9,7 @@ pipeline {
   }
   stages {
     stage('Build JS') {
-      agent {
-        docker {
-          image 'node:latest'
-          args '-v tutorial_jenkins_frontend_modules:$WORKSPACE/node_modules'
-        }
-      }
+      agent any
       steps {
         git(url: FRONTEND_GIT, branch: FRONTEND_BRANCH)
         sh 'npm i'

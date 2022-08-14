@@ -4,7 +4,7 @@ pipeline {
     FRONTEND_GIT = 'https://github.com/phucgo240699/base-reactjs-ts.git'
     FRONTEND_BRANCH = 'master'
     FRONTEND_IMAGE = 'jaywalker99/base-reactjs-ts'
-    FRONTEND_SERVER = 'https://68.183.187.99'
+    FRONTEND_SERVER = 'https://159.65.142.128'
     FRONTEND_SERVER_DIR = './app'
   }
   stages {
